@@ -5,6 +5,7 @@ sex_choices = (
 	('f','famael'),
 	('m','mael')
 )
+
 class Userinfo(models.Model):
-	name = models.Charfield(max_length=30)
-	sex = models.Charfield(max_length=1, choices = sex_choices)
+	name = models.CharField(max_length=30)
+	sex = models.CharField(max_length=1, choices = sex_choices)
